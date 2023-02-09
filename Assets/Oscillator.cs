@@ -16,6 +16,6 @@ public class Oscillator : MonoBehaviour
     void FixedUpdate()
     {
         float t = Mathf.Sin(Time.time * speed);
-        transform.position = startPos + t * offset * Vector3.right;
+        transform.position = startPos + t * offset * transform.right;
     }
 }

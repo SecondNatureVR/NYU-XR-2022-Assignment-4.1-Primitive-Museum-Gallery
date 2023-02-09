@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Week 5/AssetPack/_Scenes/3rdPersonPlatformer.unity
+    guid: a0412fe4f55351e4ab85ffee3a8757e0
   m_configObjects: {}
