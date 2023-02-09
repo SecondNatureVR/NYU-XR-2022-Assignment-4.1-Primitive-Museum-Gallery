@@ -1,4 +1,4 @@
-#Assignment 6.1: Character Controllers: Part 1
+# Assignment 6.1: Character Controllers: Part 1
 
 ![Assignment 6 1_ Character Controllers_ Part 1 - Made with Clipchamp](https://user-images.githubusercontent.com/122818242/217940251-37243564-09ff-4f39-828a-e83b595840a1.gif)
 
