@@ -408,8 +408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93366d2e9bd226546aa1dfe01744f659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 32.9
-  acceleration: 20.1
+  maxSpeed: 23.4
+  acceleration: 14.1
   lookYSensitivity: 38.9
   lookXSensitivity: 40.9
   fpCamera: {fileID: 1883076464}
