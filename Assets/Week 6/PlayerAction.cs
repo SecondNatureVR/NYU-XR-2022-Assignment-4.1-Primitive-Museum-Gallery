@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class PlayerAction : MonoBehaviour
 {
@@ -12,8 +13,9 @@ public class PlayerAction : MonoBehaviour
             actionTriggered = new UnityEvent();
     }
 
-    public void OnFire()
+    public void OnFire(InputAction.CallbackContext context)
     {
-        actionTriggered.Invoke();
+        if (context.started)
+            actionTriggered.Invoke();
     }
 }
