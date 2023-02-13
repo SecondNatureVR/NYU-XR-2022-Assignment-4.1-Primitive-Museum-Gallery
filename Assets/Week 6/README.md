@@ -27,3 +27,12 @@ Implemented:
 Implemented:
   * Coroutine-based animation
   * Sliders for duration of animation and angle of "closed state
+
+
+# Assignment 6.5: Roll-a-ball
+
+![RollABall - Made with Clipchamp (1)](https://user-images.githubusercontent.com/122818242/218578900-bca83db0-8b6f-4ab1-a9a9-efeaf78def52.gif)
+
+Implemented:
+  * WASD roll a ball
+  * 3rd person rotate-around camera
