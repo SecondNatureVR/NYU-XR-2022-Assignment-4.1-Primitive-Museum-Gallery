@@ -19,3 +19,11 @@ Implemented:
   * Interactable door open/close
   * Interatable Launch pad 
   * Jump input
+
+# Assignment 6.4: Door Animation
+
+![Door Coroutine Demo - Made with Clipchamp](https://user-images.githubusercontent.com/122818242/218185672-bf226c09-ccee-4bf9-ad50-57da22fcc119.gif)
+
+Implemented:
+  * Coroutine-based animation
+  * Sliders for duration of animation and angle of "closed state
