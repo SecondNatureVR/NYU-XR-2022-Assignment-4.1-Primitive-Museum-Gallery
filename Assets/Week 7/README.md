@@ -8,7 +8,7 @@
 ![Chest Demo - Made with Clipchamp (1)](https://user-images.githubusercontent.com/122818242/218731793-1b637f12-7959-4fe3-9eba-1bbd1ddfe838.gif)
 
 
-# Assignment 7.2: Create an Animatin Clip
+# Assignment 7.3: Create an Animation Clip
 
 
 
