@@ -11,6 +11,5 @@
 # Assignment 7.3: Create an Animation Clip
 
 
-
-https://user-images.githubusercontent.com/122818242/219125403-2327230c-fa56-43e0-927f-86ae9ab67f86.mp4
+https://user-images.githubusercontent.com/122818242/219209468-753b7ad6-9201-4c1b-83c1-cfaf5d77bd13.mp4
 
