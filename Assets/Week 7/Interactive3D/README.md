@@ -13,6 +13,9 @@ executable: https://drive.google.com/file/d/1-6BP-R47Ye7xKkYKOvGaBvLq5Trtk040/vi
 
 ## Assignment 8.1: Interactive 3D Environment
 
+https://user-images.githubusercontent.com/122818242/219776464-9ccaea96-8553-4d9c-9582-2b5de5251e7e.mp4
+
+
 Implemented:
   1. Raycasting highlight item in gaze
   2. Info box for highlighted item
