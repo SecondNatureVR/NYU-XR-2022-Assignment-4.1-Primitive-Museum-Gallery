@@ -7,15 +7,31 @@ public class Radio : MonoBehaviour
     [SerializeField] private AudioSource audio;
     [SerializeField] public float duration = 0.8f;
     [SerializeField] Animator theBoss;
+    [SerializeField][Range(1, 300)] public float lerpMax;
+    [SerializeField][Range(1, 2)] public float reverbCurve;
+    private GameObject player;
     private bool isPlaying = false;
+    private float dist;
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         audio.Play();
         audio.pitch = 0f;
         Toggle();
     }
-    
+
+    private void Update()
+    {
+        dist = Vector3.Distance(transform.position, player.transform.position);
+        float t = Mathf.InverseLerp(10, 300, dist);
+        float t2 = Mathf.InverseLerp(0, lerpMax, Mathf.Pow(dist,reverbCurve));
+        float dryLevel = Mathf.Lerp(0, -5000, t);
+        float roomLevel = Mathf.Lerp(-10000, 0, t2);
+        audio.outputAudioMixerGroup.audioMixer.SetFloat("DryLevel", dryLevel);
+        audio.outputAudioMixerGroup.audioMixer.SetFloat("RoomLevel", roomLevel);
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
