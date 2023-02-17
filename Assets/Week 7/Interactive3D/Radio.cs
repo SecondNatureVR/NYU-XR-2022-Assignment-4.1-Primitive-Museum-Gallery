@@ -11,7 +11,6 @@ public class Radio : MonoBehaviour
 
     private void Start()
     {
-        audio = GetComponent<AudioSource>();
         audio.Play();
         audio.pitch = 0f;
         Toggle();
@@ -21,12 +20,17 @@ public class Radio : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
+        {
+            gameObject.name = $"Turn Radio {(isPlaying ? "Off" : "On")}";
             other.GetComponent<PlayerAction>().actionTriggered.AddListener(Toggle);
+        }
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")) {
+            gameObject.name = "Radio";
             other.GetComponent<PlayerAction>().actionTriggered.RemoveListener(Toggle);
+        }
     }
     void Toggle()
     {
@@ -40,11 +44,12 @@ public class Radio : MonoBehaviour
             StartCoroutine(SetPitch(audio.pitch, 1));
         }
         isPlaying = !isPlaying;
+        gameObject.name = $"Turn Radio {(isPlaying ? "Off" : "On")}";
     }
 
     public IEnumerator SetPitch(float fromPitch, float toPitch)
     {
-        Debug.Log($"Start {fromPitch} -> {toPitch}");
+        //Debug.Log($"Start {fromPitch} -> {toPitch}");
         float startTime = Time.time;
         float t = 0;
         while (t < 1) {
@@ -52,7 +57,7 @@ public class Radio : MonoBehaviour
             var val = Mathf.Lerp(fromPitch, toPitch, t);
             audio.pitch = val;
             theBoss.speed = val > .2f ? val : 0;
-            Debug.Log($"{audio.pitch} @ t={t}");
+            //Debug.Log($"{audio.pitch} @ t={t}");
             yield return null;
         }
     }

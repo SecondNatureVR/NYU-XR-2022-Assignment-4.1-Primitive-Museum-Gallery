@@ -5,16 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Week 5/AssetPack/_Scenes/3rdPersonPlatformer.unity
     guid: a0412fe4f55351e4ab85ffee3a8757e0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Week 7/menubuttons.unity
     guid: ca8e1648ae1f28a4b92bb22ce2b6177f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Week 6/RollABall.unity
     guid: dcc4c1a36fd25984fb77398bc1e48a79
-  - enabled: 1
+  - enabled: 0
     path: Assets/Week 6/Assignment 6.3 Interactions.unity
     guid: 7ef04a584b8e2704eba7477d34f20a69
+  - enabled: 1
+    path: Assets/Week 7/Interactive3D/Interactive3D.unity
+    guid: 7295d4a0b5da11240a8eb8569b5a7527
   m_configObjects: {}
